@@ -4,7 +4,6 @@ title: "Quarto Deployment Process: Two Stages"
 
 ## Quarto Deployment Process Flowchart 
 
-
 ```{mermaid}
 
 flowchart TD
