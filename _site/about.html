@@ -150,18 +150,18 @@ ul.task-list li input[type="checkbox"] {
 <div>
 <pre class="mermaid mermaid-js">flowchart TD
     A[Start] --&gt; B[Create GitHub Repo DSCI521_website-test on GitHub]
-    B --&gt; C[Clone Repo Locally git clone &lt;repo_url&gt;]
-    C --&gt; D[Create Quarto Project quarto create project]
-    D --&gt; E[Preview Project Locally quarto preview]
-    E --&gt; F[Render Site quarto render]
-    F --&gt; G[Add, Commit, and Push Changes git add, commit, push]
+    B --&gt; C[Clone Repo Locally: git clone repo_url]
+    C --&gt; D[Create Quarto Project: quarto create project DSCI521_website-test]
+    D --&gt; E[Preview Project Locally: quarto preview]
+    E --&gt; F[Render Site: quarto render]
+    F --&gt; G[Add, Commit, and Push Changes: git add, commit, push]
     
     G --&gt; H[Go to GitHub Pages Settings: DSCI521_website-test/settings/pages]
     H --&gt; I[Set GitHub Pages Source to Main Branch and Root]
     I --&gt; J[GitHub Pages Renders README.md by Default]
     
     J --&gt; K[Create Root Directory for Site]
-    K --&gt; L[Modify _quarto.yml to  Set output-dir to output docs]
+    K --&gt; L[Modify _quarto.yml to Set output-dir to output docs]
     L --&gt; M[Move Rendered Files to docs or Re-Render]
     M --&gt; N[Go to GitHub Pages Settings: Select docs as the Source]
     N --&gt; O[Check the Deployed Website]
@@ -183,11 +183,12 @@ ul.task-list li input[type="checkbox"] {
     P[Stage 2: Publish with gh-pages Branch]
     P --&gt; Q[Delete the docs Folder and Remove output-dir: docs/ in _quarto.yml]
     Q --&gt; R[Change Branch Deployment to None in GitHub Pages Settings]
-    R --&gt; S[Run quarto publish to gh-pages]
+    R --&gt; S[Run: quarto publish to gh-pages]
     S --&gt; T[Make Changes, Add, Commit, and Push Updates]
     T --&gt; U[If Not Deployed Automatically]
     U --&gt; V[Manually Set GitHub Pages to gh-pages Branch]
-    U --&gt; W[Re-run quarto publish to Ensure Deployment]
+    U --&gt; W[Re-run: quarto publish to Ensure Deployment]
+
 
 </pre>
 </div>

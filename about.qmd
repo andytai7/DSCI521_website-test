@@ -8,18 +8,18 @@ title: "Quarto Deployment Process: Two Stages"
 
 flowchart TD
     A[Start] --> B[Create GitHub Repo DSCI521_website-test on GitHub]
-    B --> C[Clone Repo Locally git clone <repo_url>]
-    C --> D[Create Quarto Project quarto create project]
-    D --> E[Preview Project Locally quarto preview]
-    E --> F[Render Site quarto render]
-    F --> G[Add, Commit, and Push Changes git add, commit, push]
+    B --> C[Clone Repo Locally: git clone repo_url]
+    C --> D[Create Quarto Project: quarto create project DSCI521_website-test]
+    D --> E[Preview Project Locally: quarto preview]
+    E --> F[Render Site: quarto render]
+    F --> G[Add, Commit, and Push Changes: git add, commit, push]
     
     G --> H[Go to GitHub Pages Settings: DSCI521_website-test/settings/pages]
     H --> I[Set GitHub Pages Source to Main Branch and Root]
     I --> J[GitHub Pages Renders README.md by Default]
     
     J --> K[Create Root Directory for Site]
-    K --> L[Modify _quarto.yml to  Set output-dir to output docs]
+    K --> L[Modify _quarto.yml to Set output-dir to output docs]
     L --> M[Move Rendered Files to docs or Re-Render]
     M --> N[Go to GitHub Pages Settings: Select docs as the Source]
     N --> O[Check the Deployed Website]
@@ -33,10 +33,11 @@ flowchart TD
     P[Stage 2: Publish with gh-pages Branch]
     P --> Q[Delete the docs Folder and Remove output-dir: docs/ in _quarto.yml]
     Q --> R[Change Branch Deployment to None in GitHub Pages Settings]
-    R --> S[Run quarto publish to gh-pages]
+    R --> S[Run: quarto publish to gh-pages]
     S --> T[Make Changes, Add, Commit, and Push Updates]
     T --> U[If Not Deployed Automatically]
     U --> V[Manually Set GitHub Pages to gh-pages Branch]
-    U --> W[Re-run quarto publish to Ensure Deployment]
+    U --> W[Re-run: quarto publish to Ensure Deployment]
+
 
 ```
