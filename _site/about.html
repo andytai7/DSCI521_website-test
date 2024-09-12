@@ -157,7 +157,8 @@ ul.task-list li input[type="checkbox"] {
     F --&gt; G[Add, Commit, and Push Changes: git add, commit, push]
     
     G --&gt; H[Go to GitHub Pages Settings: DSCI521_website-test/settings/pages]
-    H --&gt; I[Set GitHub Pages Source to Main Branch and Root]
+    H --&gt; Q[Type 1: Publish with DOCs folder]
+    Q --&gt; I[Set GitHub Pages Source to Main Branch and Root]
     I --&gt; J[GitHub Pages Renders README.md by Default]
     
     J --&gt; K[Create Root Directory for Site]
@@ -166,30 +167,14 @@ ul.task-list li input[type="checkbox"] {
     M --&gt; N[Go to GitHub Pages Settings: Select docs as the Source]
     N --&gt; O[Check the Deployed Website]
 
-
-  
-</pre>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
-</div>
-<div class="cell" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class="figure"><p></p>
-<div>
-<pre class="mermaid mermaid-js">flowchart TD
-    P[Stage 2: Publish with gh-pages Branch]
-    P --&gt; Q[Delete the docs Folder and Remove output-dir: docs/ in _quarto.yml]
-    Q --&gt; R[Change Branch Deployment to None in GitHub Pages Settings]
+    H --&gt; P[Type 1: Publish with gh-pages Branch]
+    P --&gt; R[Change Branch Deployment to None in GitHub Pages Settings]
     R --&gt; S[Run: quarto publish to gh-pages]
     S --&gt; T[Make Changes, Add, Commit, and Push Updates]
     T --&gt; U[If Not Deployed Automatically]
     U --&gt; V[Manually Set GitHub Pages to gh-pages Branch]
     U --&gt; W[Re-run: quarto publish to Ensure Deployment]
-
-
+  
 </pre>
 </div>
 <p></p></figure><p></p>
