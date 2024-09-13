@@ -1,5 +1,5 @@
 ---
-title: "Quarto Deployment Process: Two Stages"
+title: "Quarto Deployment Process: Two Types"
 ---
 
 ## Quarto Deployment Process Flowchart 
